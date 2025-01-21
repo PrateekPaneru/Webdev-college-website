@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <section class="sub-header">
+        <nav class="nav-bar">
+            <a href="index.html"><img src="eduford_img/logo.png" alt="logo"></a>
+            <div class="menu" id="menu">
+                <i class="fa-solid fa-xmark " onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html"  class="active">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars line" onclick="showmenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!-- about us Content -->
+
+    <section class="abt-us">
+        <div class="row">
+            <div class="abt-col">
+                <h1>We are the world's Largest University</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae possimus corporis, dolorum iusto aspernatur. Vero quam minima eum itaque voluptatibus ducimus optio saepe maiores repudiandae, odio dolore cumque! Quam quis quas ipsum? Aliquam at ad ullam laudantium odio expedita praesentium labore omnis reprehenderit. Odit.</p>
+                <a href="index.html"><button> Explore Now</button></a>
+            </div>
+            <div class="abt-col">
+                <img src="eduford_img/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+      <!-- footer -->
+       <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, similique maxime in corporis, tenetur nulla qui quia suscipit, aliquid illo est sapiente?<br> Debitis magnam facilis perspiciatis blanditiis laboriosam explicabo obcaecati et veniam at minus!</p>
+            <div class="icon">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+            <p>Page Made by @Prateek</p>
+       </section>
+<!-- javascript -->
+    <script>
+        var navLinks= document.getElementById('menu');
+        function showmenu(){
+            navLinks.style.right="0";
+        }
+        function hidemenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+
+
+</body>
+</html>

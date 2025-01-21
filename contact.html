@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+      <!-- header -->
+      <section class="sub-header">
+        <nav class="nav-bar">
+            <a href="index.html"><img src="eduford_img/logo.png" alt="logo"></a>
+            <div class="menu" id="menu">
+                <i class="fa-solid fa-xmark " onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars line" onclick="showmenu()"></i>
+        </nav>
+    </section>
+
+    <!-- form -->
+    <div class="form">
+    <div class="form-container">
+        <h2>College Admission Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="3" placeholder="Enter your address" required></textarea>
+            </div>
+    
+            <div class="form-group">
+                <label for="course">Preferred Course</label>
+                <select id="course" name="course" required>
+                    <option value="">Select a course</option>
+                    <option value="bsc">B.Sc</option>
+                    <option value="bcom">B.Com</option>
+                    <option value="ba">B.A</option>
+                    <option value="btech">B.Tech</option>
+                </select>
+            </div>
+    
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</div>
+     <!-- footer -->
+     <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, similique maxime in corporis, tenetur nulla qui quia suscipit, aliquid illo est sapiente?<br> Debitis magnam facilis perspiciatis blanditiis laboriosam explicabo obcaecati et veniam at minus!</p>
+        <div class="icon">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+        <p>Page Made by @Prateek</p>
+   </section>
+<!-- javascript -->
+<script>
+    var navLinks= document.getElementById('menu');
+    function showmenu(){
+        navLinks.style.right="0";
+    }
+    function hidemenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+
+    
+</body>
+</html>
